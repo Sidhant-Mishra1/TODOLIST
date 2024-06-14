@@ -1,0 +1,120 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background color */
+    color: #ecf0f1; /* Light text color for better contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #1c1c1c; /* Slightly lighter black background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #2c2c2c; /* Match background */
+    color: #ecf0f1; /* Light text color */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #27ae60; /* Green background for button */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2ecc71; /* Lighter green on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background: #333; /* Darker background for list items */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ecf0f1; /* Light text color */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+li:hover {
+    background: #e67e22; /* Orange background on hover */
+    transform: scale(1.05); /* Bulge on hover */
+}
+
+li.done {
+    background: #2ecc71; /* Green background for done tasks */
+    color: #fff; /* White text color for done tasks */
+}
+
+.icons {
+    display: flex;
+    gap: 5px;
+}
+
+button.icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ecf0f1; /* Light color for icons */
+}
+
+button.icon:hover {
+    color: #3498db; /* Blue on hover */
+}
+
+button.icon.done {
+    color: #2ecc71; /* Green for done icon */
+}
+
+button.icon.delete {
+    color: #e74c3c; /* Red for delete icon */
+}
+
+.progress-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #555;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #27ae60;
+    width: 0%;
+    transition: width 0.3s; /* Smooth transition for progress bar width */
+}
